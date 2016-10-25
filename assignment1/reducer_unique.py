@@ -15,10 +15,10 @@ for line in sys.stdin:          # For ever line in the input from stdin
         value_total += value
     else:
         if (prev_sentence) and (value_total == 1):  # write result to stdout
-            print("{0}\t{1}".format(prev_sentence, value_total))
+            print("{0}\t".format(prev_sentence))
             
         value_total = value
         prev_sentence = sentence
 
 if (prev_sentence == sentence)and(value_total == 1):  # Don't forget the last key/value pair
-    print("{0}\t{1}".format(prev_sentence, value_total))
+    print("{0}\t".format(prev_sentence))
