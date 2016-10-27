@@ -7,5 +7,4 @@ for line in sys.stdin:                  # input from standard input
     tokens = line.split()
 
     for i in range(len(tokens)-3+1): # number of words in line - n-word sequence + 1
-	trio = tuple(tokens[i:i+3])
-    	print ("{0}\t{1}".format(trio,1)) # write the results to standard output
+	print ("{0} {1} {2}\t{3}".format(tokens[i],tokens[i+1],tokens[i+2],1)) # write the results to standard output

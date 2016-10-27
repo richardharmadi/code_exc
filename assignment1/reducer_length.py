@@ -7,7 +7,7 @@ longest_word = 0
 
 for line in sys.stdin:          # For ever line in the input from stdin
     line = line.strip("\n")         # Remove trailing characters
-    line, len_line, len_word = line.split("\t")
+    len_line, len_word = line.split("\t")
     len_line = int(len_line)
     len_word = int(len_word)
     # Remember that Hadoop sorts map output by key reducer takes these keys sorted

@@ -11,4 +11,4 @@ for line in sys.stdin:                  # input from standard input
     for token in tokens:
 	if (len(token)>longest_token):	
         	longest_token = len(token)
-    print ("{0}\t{1}\t{2}".format(line,char_count,longest_token)) # write the results to standard output
+    print ("{0}\t{1}".format(char_count,longest_token)) # write the results to standard output
