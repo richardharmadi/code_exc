@@ -1,0 +1,6 @@
+7	big green apple
+4	big green pear
+3	big green watermelon
+1	small red apple
+2	small red car
+5	tiny grey mouse
