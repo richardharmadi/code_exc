@@ -13,6 +13,8 @@ hadoop jar /opt/hadoop/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.
 -output /user/$USER/assignment2/pretask1 \
 -mapper mapper-count.py \
 -file mapper-count.py \
+-combiner combiner-count.py \
+-file combiner-count.py \
 -reducer reducer-count.py \
 -file reducer-count.py \
 -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner
